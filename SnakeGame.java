@@ -42,6 +42,11 @@ public class SnakeGame {
 
     private void spawnFood() {
         // Put one instance of food on the board
+        int x = (int) (Math.random() * 10);
+        int y = (int) (Math.random() * 10);
+        
+
+        System.out.println(x + " " + y);
     }
 
     private void printBoard() {
@@ -72,7 +77,7 @@ public class SnakeGame {
 
     public static void main(String[] args) {
         SnakeGame snakeGame = new SnakeGame();
-        snakeGame.run();
+        snakeGame.run();        
     }
 }
 
